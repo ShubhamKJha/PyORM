@@ -44,8 +44,7 @@ def connect_db(db_code, db_path, *args, **kwargs):
     :param db_path: Path to the respective database
     :param args:
     :param kwargs:
-    :return: SqliteDatabase object for 'sqlite' db_code, MysqlDatabase
-    object for 'mysql' db_code
+    :return: Returns an engine used for interacting with databases
     """
     # TODO: Add other databases
     if db_code == 'sqlite':
